@@ -18,9 +18,9 @@ import streamlit as st
 
 
 # Gemini API 키 설정
-import shutil
-os.makedirs("/root/.streamlit", exist_ok=True)
-shutil.copy("secrets.toml", "/root/.streamlit/secrets.toml")
+# import shutil
+# os.makedirs("/root/.streamlit", exist_ok=True)
+# shutil.copy("secrets.toml", "/root/.streamlit/secrets.toml")
 
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
