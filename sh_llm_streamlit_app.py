@@ -17,7 +17,9 @@ import faiss
 import streamlit as st
 
 
-# Gemini API 키 설정
+# Gemini 설정
+import google.generativeai as genai
+
 # import shutil
 # os.makedirs("/root/.streamlit", exist_ok=True)
 # shutil.copy("secrets.toml", "/root/.streamlit/secrets.toml")
@@ -27,7 +29,6 @@ GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Gemini 모델 선택
-import google.generativeai as genai
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 
